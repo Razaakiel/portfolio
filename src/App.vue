@@ -1,5 +1,9 @@
 <template>
-  <Header/>
+  <div class="wrapper">
+    <Header/>
+    <router-view/>
+  </div>
+
 
 
 
@@ -16,5 +20,10 @@ export default {
 <style lang="scss">
 html{
   background-color: #1c2b4f;
+}
+
+a{
+  text-decoration: none;
+  color: black;
 }
 </style>

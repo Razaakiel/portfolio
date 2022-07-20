@@ -11,17 +11,17 @@
     <div class="header__nav-accueil">
       <router-link to="/accueil">Accueil</router-link>
     </div>
-    <div class="header__nav-profil">
-        <router-link to="/profil">Mon Profil</router-link>
-    </div>
     <div class="herder__nav-projets">
-      <router-link to="/projet">Mes projets</router-link>
+      <router-link to="/projets">Mes projets</router-link>
     </div>
     <div class="header__nav-linkedin">
       <a href="https://www.linkedin.com/in/yoann-poulain-1a6289153/">Linkedin</a>
     </div>
     <div class="header__nav-github">
       <a href="https://github.com/Razaakiel">Github</a>
+    </div>
+    <div class="header__nav-contact">
+      <a href="mailto:poulain.yoann.dev@gmail.com">Me contacter</a>
     </div>
   </div>
 
@@ -37,7 +37,6 @@ export default {
 
 <style lang="scss">
 .header{
-  background-color: #213f77;
   position: absolute;
   top: 0;
   left: 0;
@@ -46,12 +45,14 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-right: black solid 2px;
 }
 
 .header{
 
   &__profil-photo{
     margin-left: 55px;
+    border-radius: 100px;
    }
 
   &__nav{
@@ -60,6 +61,10 @@ export default {
     justify-content: space-around;
     margin-left: 90px;
     height: 200px;
+    font-size: 24px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
